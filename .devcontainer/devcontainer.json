@@ -4,10 +4,11 @@
   "name": "lua-sqlite",
   "dockerComposeFile": "compose.yaml",
   "service": "devcontainer", // compose.yaml内のサービス名を指定
-  "workspaceFolder": "/workspaces/",
+  // ${localWorkspaceFolderBasename} はローカル(WLS上)のプロジェクトルートのフォルダ名に置き換えられる
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   // Use this environment variable if you need to bind mount your local source code into a new container.
   "remoteEnv": {
-    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+    // "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
   },
   // 開発環境に追加する機能を指定
   "features": {

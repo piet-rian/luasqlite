@@ -14,8 +14,19 @@ services:
     volumes:
       # Forwards the local Docker socket to the container.
       - /var/run/docker.sock:/var/run/docker-host.sock
-      # Update this to wherever you want VS Code to mount the folder of your project
-      - ..:/workspaces:cached
+      # * プロジェクトルートの一つ上のディレクトリを/workspacesにマウントする設定
+      # * ホスト側でのディレクトリ構成は以下のようにすること
+      #   ```
+      #   grandparents/
+      #     parents1/ <- この配下に置かれているものが全部コンテナに取り込まれてしまう
+      #       lua-sqlite/        <- devcontainerプロジェクト, これだけ配置する
+      #     parents2/
+      #       other-devcontainer-project/ <- 他のdevcontainerプロジェクト
+      #   ```
+      #
+      # ! `/home/(user)/devcontainer-project` といった配置にしてしまうと
+      # ! `/home/(user)/` 配下の全てのディレクトリ・ファイルがコンテナに取り込まれてしまうため注意
+      - ../..:/workspaces:cached
 
     # Overrides default command so things don't shut down after the process ends.
     entrypoint: /usr/local/share/docker-init.sh
