@@ -10,6 +10,10 @@
 ### スクリプト内でエラーが発生した場合に即座に終了するためのオプション
 set -e
 
+### 以下、tmp以下のディレクトリで実施する
+mkdir /tmp/dev-container-post-create-user-define-actions
+cd /tmp/dev-container-post-create-user-define-actions
+
 ##### Install LuaRocks #####
 # ! devcontainer用イメージから apt で探しに行く先に luarocks が無いため、ソースからインストールする
 # ref. https://github.com/luarocks/luarocks/blob/main/docs/installation_instructions_for_unix.md#quick-start
