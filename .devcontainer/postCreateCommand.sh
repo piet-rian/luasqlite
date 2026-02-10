@@ -26,8 +26,13 @@ sudo luarocks install luasocket
 cd ..
 rm -rf luarocks-${LUAROCKS_VERSION} luarocks-${LUAROCKS_VERSION}.tar.gz
 
+# これを実行しないとluarocksでインストールしたモジュールがLuaから見えない
+# ref. https://github.com/luarocks/luarocks/blob/main/docs/using_luarocks.md#rocks-trees-and-the-lua-libraries-path
+eval "$(luarocks path --bin)"
+
 ##### Install Lua modules #####
-# lsqlite3
+# TODO モジュール増えてきた時の対応
+### lsqlite3
 # ref. https://lua.sqlite.org/home/doc/tip/doc/lsqlite3.wiki
 sudo luarocks install lsqlite3
 

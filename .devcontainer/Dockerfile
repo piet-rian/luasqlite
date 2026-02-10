@@ -14,5 +14,4 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 #       現に、本devcontainerでは sqlite3, lua のインストールを features で解決している
 #       see. https://containers.dev/features/
 #
-# 2.  `apt install` あるいはそれに準ずる行為(`make install`等)が必要な場合は
-#     `./devcontainer/postCreateCommand.sh` に記述すること
+# 2.  features で解決できない場合は `./devcontainer/postCreateCommand.sh` で行うこと

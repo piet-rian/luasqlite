@@ -18,7 +18,7 @@
     },
     // luaのインストール
     "ghcr.io/prulloac/devcontainer-features/lua:1": {
-      "version": "5.5.0", // Luaのバージョンを指定
+      "version": "5.4.8", // Luaのバージョンを指定 // モジュール側が5.5対応してない物が多いため
       "useApt": "false" // aptではなくソースコードからインストールする(lua.orgから最新の安定版を取得)
     },
     // sqliteのインストール
