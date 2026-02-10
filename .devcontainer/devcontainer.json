@@ -22,7 +22,8 @@
     "vscode": {
       // 必ず導入する拡張機能を指定
       "extensions": [
-        "ms-azuretools.vscode-containers"
+        "ms-azuretools.vscode-containers",
+        "tomblind.local-lua-debugger-vscode"
       ]
     }
   }
