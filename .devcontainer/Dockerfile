@@ -1,7 +1,7 @@
 # Microsoft 提供の devcontainer イメージをベースにすることで、
 # devcontainer.json の "remoteUser" プロパティを指定しなくても non-root ユーザで
 # コンテナが動く
-FROM mcr.microsoft.com/devcontainers/base:bookworm
+FROM mcr.microsoft.com/devcontainers/base:trixie
 
 # タイムゾーンを日本時間に設定(しないとDateコマンド等の時間がUTCになる)
 ENV TZ=Asia/Tokyo
