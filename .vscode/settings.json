@@ -1,4 +1,5 @@
 {
   "Lua.workspace.library": [],
-  "Lua.workspace.checkThirdParty": false
+  "Lua.workspace.checkThirdParty": false,
+  "json.format.keepLines": true
 }

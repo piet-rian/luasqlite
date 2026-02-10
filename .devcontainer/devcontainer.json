@@ -4,12 +4,15 @@
   "name": "lua-sqlite",
   "dockerComposeFile": "compose.yaml",
   "service": "devcontainer", // compose.yaml内のサービス名を指定
+
   // ${localWorkspaceFolderBasename} はローカル(WLS上)のプロジェクトルートのフォルダ名に置き換えられる
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
   // Use this environment variable if you need to bind mount your local source code into a new container.
   "remoteEnv": {
     // "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
   },
+
   // 開発環境に追加する機能を指定
   "features": {
     // WLS2上のDockerデーモンを使用可能にする
@@ -17,16 +20,19 @@
       "moby": "false", // trixieはmoby未対応@2026-02-11 // https://github.com/apache/superset/issues/37180#issuecomment-3759792394
       "enableNonRootDocker": "true" // 非rootユーザーでdockerコマンドを使用可能にする
     },
+
     // luaのインストール
     "ghcr.io/prulloac/devcontainer-features/lua:1": {
       "version": "5.4.8", // Luaのバージョンを指定 // モジュール側が5.5対応してない物が多いため
       "useApt": "false" // aptではなくソースコードからインストールする(lua.orgから最新の安定版を取得)
     },
+
     // sqliteのインストール
     "ghcr.io/rails/devcontainer/features/sqlite3": {
       // railsと書いてあるが、内容としてはapt経由でsqlite3をインストールするだけのものなのでluaプロジェクトでも利用可能
     }
   },
+
   "customizations": {
     "vscode": {
       // 必ず導入する拡張機能を指定
@@ -37,6 +43,7 @@
       ]
     }
   },
+
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // コンテナビルド後に一回だけ実行されるコマンドを指定
