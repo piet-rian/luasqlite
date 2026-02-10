@@ -34,11 +34,13 @@
         "tomblind.local-lua-debugger-vscode"
       ]
     }
-  }
+  },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
-  // Use 'postCreateCommand' to run commands after the container is created.
-  // "postCreateCommand": "docker --version",
+  // コンテナビルド後に一回だけ実行されるコマンドを指定
+  // see. https://containers.dev/implementors/json_reference/#lifecycle-scripts
+  // memo. ファイル名だけ渡すと実行権限不足で失敗するため、シェル経由で実行する
+  "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh"
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
   // "remoteUser": "root"
 }
