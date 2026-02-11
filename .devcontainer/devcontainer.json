@@ -39,7 +39,8 @@
       "extensions": [
         "ms-azuretools.vscode-containers",
         "tomblind.local-lua-debugger-vscode",
-        "alexcvzz.vscode-sqlite"
+        "alexcvzz.vscode-sqlite",
+        "ambooth.git-rename"
       ]
     }
   },

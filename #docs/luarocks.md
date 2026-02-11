@@ -36,6 +36,17 @@ luarocks search <keyword>
 sudo luarocks remove <module_name>
 ```
 
+## TODO
+
+- 5.5環境で使えるsqlite用のモジュール
+  - lsqlite3が5.5未対応 & sqlite特化
+    - もうちょっと汎用的なライブラリがあればそっちにしたい
+  - 候補ピックアップ
+    - LuaSQL
+    - luadbi
+    - `kkharji/sqlite.lua`
+    - `sql-orm`
+
 ## ref
 
 - https://luarocks.org/
