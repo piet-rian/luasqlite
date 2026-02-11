@@ -1,8 +1,8 @@
 # 軽量なプログラミング環境を求めて (lua+sqliteの場合)
 
-ざっくり検討した結果、以下のどちらが良さそうと判断
+ざっくり検討した結果、以下のどれかが良さそうと判断
 
-- lua + sqlite <- 今回はこっち
+- **lua + sqlite** <- 今回はこれ
 - (Bun|Deno) + pglite
 - (Bun|Deno) + sql.js
 
@@ -15,6 +15,6 @@ OS, IDE, 言語, ソフトウェアほか諸々
 - WSL (Debian)
 - Docker (on WSL)
 - devcontainer (Debian base)
-- lua5.4
+- [lua](lua.md)
 - luarocks
-- sqlite3
+- sqlite
