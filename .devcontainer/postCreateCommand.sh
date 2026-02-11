@@ -35,9 +35,9 @@ eval "$(luarocks path --bin)"
 
 ##### Install Lua modules #####
 # TODO モジュール増えてきた時の対応
-### lsqlite3
-# ref. https://lua.sqlite.org/home/doc/tip/doc/lsqlite3.wiki
-sudo luarocks install lsqlite3
+### sql-orm
+# ref. https://github.com/lalawue/lua-sql-orm
+sudo luarocks install sql-orm
 
 ##### print completion message #####
 echo "postCreateCommand.sh: completed."
