@@ -1,5 +1,6 @@
 {
-  "Lua.workspace.library": [],
+  "Lua.workspace.library": [ ],
   "Lua.workspace.checkThirdParty": false,
-  "json.format.keepLines": true
+  "json.format.keepLines": true,
+  "lua-local.interpreter": "lua5.4"
 }
