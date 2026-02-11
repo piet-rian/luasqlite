@@ -42,10 +42,10 @@ sudo luarocks remove <module_name>
   - lsqlite3が5.5未対応 & sqlite特化
     - もうちょっと汎用的なライブラリがあればそっちにしたい
   - 候補ピックアップ
-    - LuaSQL
-    - luadbi
-    - `kkharji/sqlite.lua`
-    - `sql-orm`
+    - LuaSQL ... 複数DB対応は良いが方式があまりに原始的すぎるのでなし
+    - luadbi ... luasqlと同程度の原始的さ
+    - `kkharji/sqlite.lua` ... こいつが要求する luv の install時 にcmakeがないエラーが出るのでなし
+    - `sql-orm` ... 感覚的には一番モダン
 
 ## ref
 
