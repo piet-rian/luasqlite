@@ -16,5 +16,5 @@ OS, IDE, 言語, ソフトウェアほか諸々
 - Docker (on WSL)
 - devcontainer (Debian base)
 - [lua](lua.md)
-- luarocks
+- [luarocks](luarocks.md)
 - sqlite

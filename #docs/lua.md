@@ -4,6 +4,7 @@
 - 一般的には後付のユーザースクリプト用途だが、これそのもので開発しようというものが今回のメイン
 
 ## インストール
+
 devcontainerのfeatures機能によって自動で行われる
 
 - 公式サイトのアーカイブファイルを展開する方式
@@ -65,17 +66,10 @@ lua gcp.o
 - ユーザー側による不慮のソースコード変更からの保護の役目が強い
 - コンパイル・ビルトを通じて高速化したい場合は[luajit](https://luajit.org/index.html)を用いる
 
-## luarocks
-
-- luaのパッケージマネージャ
-  - node.jsにおけるnpmに相当するそれ
-- 詳細は別記事
-
 ## ref
 
 - https://www.lua.org/
 - https://luajit.org/
-- https://luarocks.org/
 
 日本語圏情報
 
