@@ -25,7 +25,6 @@ cd luarocks-${LUAROCKS_VERSION}
 ./configure --with-lua-include=/usr/local/include
 make
 sudo make install
-sudo luarocks install luasocket
 # Cleanup
 cd ..
 rm -rf luarocks-${LUAROCKS_VERSION} luarocks-${LUAROCKS_VERSION}.tar.gz
