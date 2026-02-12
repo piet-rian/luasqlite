@@ -40,6 +40,6 @@ eval "$(luarocks path --bin)"
 sudo luarocks install sql-orm
 
 ##### print completion message #####
-echo -e "postCreateCommand.sh: \033[42m completed. \033[0m"
-echo -e "\033[32m ===== devcontainer のセットアップが完了しました。 ===== \033[0m"
+echo "postCreateCommand.sh: \033[42m completed. \033[0m"
+echo "\033[32m ===== devcontainer のセットアップが完了しました。 ===== \033[0m"
 exit 0
