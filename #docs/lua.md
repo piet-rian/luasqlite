@@ -44,7 +44,7 @@ lua gcp.lua 100
 
 ※lua5.5未対応っぽいので対応策を探す
 
-**TODO: アタッチ(デバッガだけ先に立ち上げてluaそのものはターミナルから実行する)方式を調べる**
+TODO: アタッチ(デバッガだけ先に立ち上げてluaそのものはターミナルから実行する)方式を調べる
 
 ## コンパイル
 
@@ -70,11 +70,11 @@ lua gcp.o
 
 ## ref
 
-- https://www.lua.org/
-- https://luajit.org/
+- <https://www.lua.org/>
+- <https://luajit.org/>
 
 日本語圏情報
 
-- https://ja.wikibooks.org/wiki/Lua
-- https://qiita.com/advent-calendar/2025/lua
+- <https://ja.wikibooks.org/wiki/Lua>
+- <https://qiita.com/advent-calendar/2025/lua>
 - [Lua 5.4リファレンスマニュアル（日本語訳）](https://inzkyk.xyz/lua_5_4/) ※非公式
