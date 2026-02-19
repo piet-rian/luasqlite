@@ -30,7 +30,10 @@
     // sqliteのインストール
     "ghcr.io/rails/devcontainer/features/sqlite3": {
       // railsと書いてあるが、内容としてはapt経由でsqlite3をインストールするだけのものなのでluaプロジェクトでも利用可能
-    }
+    },
+
+    // jj(jujutsu)のインストール
+    "ghcr.io/eitsupi/devcontainer-features/jujutsu-cli:1": {}
   },
 
   "customizations": {

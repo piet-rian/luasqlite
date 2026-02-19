@@ -82,3 +82,6 @@ luac.out
 
 ### sqlite
 *.db
+
+### jj
+.jj
